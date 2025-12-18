@@ -6,6 +6,7 @@ import './ProductList.css';
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [lowStock, setLowStock] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchProducts();
